@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <a href="/" class="home">Go To Home</a>
+    <div class="cards">
+        <% users.forEach(e=> { %>
+          <div class="card">
+        <img src="<%= e.image %>" alt="user-img">
+        <h2><%=e.name %></h2>
+<p class="email"><%=e.email %></p>
+        <div class="link">
+            <a href="/edit/<%=e._id %>" class="edit">Edit User</a>
+            <a href="/delete/<%=e._id %>" class ="delete">Delete User</a>
+        </div>
+    </div>
+        <% }) %>
+   
+    
+    </div>
+    
+</body>
+</html>

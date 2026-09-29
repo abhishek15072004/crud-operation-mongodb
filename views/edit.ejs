@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/syle.css">
+</head>
+<body>
+    <h1>Update user</h1>
+    <a  class="read" href="/read">Read Users</a>
+   <div>
+    <form method="post" action="/update/<%=updateduser._id %>" >
+        <input type="text" placeholder="enter your name" name="name" value="<%=updateduser.name  %>">
+         <input type="text" placeholder="enter your email" name="email" value="<%=updateduser.email %>">
+         <input type="text" placeholder="enter your image" name="image" value="<%=updateduser.image %>" >
+         <input type="submit" value="Create user">
+    </form>
+   </div>
+</body>
+</html>

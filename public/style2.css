@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.card {
+    width: 320px;
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.username {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.email {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    text-decoration: none;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.edit {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    border:2px solid black;
+    text-decoration:none;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 4px;
+    border:2px solid black;
+    text-decoration:none;
+}
+
+.edit:hover {
+    background-color: #0056b3;
+}
+
+.delete:hover {
+    background-color: #b02a37;
+}
+.cards{
+    display:flex;
+    gap: 35px;
+}
